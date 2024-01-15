@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper {
+    /* min-height: 800px; */
+    margin: 0 auto;
+    color: #4b4442;
+    background-color: rgb(187, 209, 216);
+}
+
+#wrapper h3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;        
+}
+
+
+header {
+    text-align: center;
+    /* width: 100%; */
+    min-height: 50px;
+    /* background-color: red; */
+}
+
+    header .profile-pic {
+        vertical-align: top;
+    }
+
+    header .profile-pic .info{
+        display: inline-block;
+        line-height: 1.4;
+        /* min-height: 130px;
+        vertical-align: top; */
+        /* margin: 20px 12px 10px 15px; */
+    }
+
+    header .profile-pic img {
+        width: 220px;
+        min-height: 185px;
+        object-fit: cover;
+    }
+
+    header .info {
+        /* display: inline-block; */
+        /* width: 650px; */
+        min-height: 130px;
+        /* background-color: green; */
+        margin: 15px;
+    }
+
+    header h1 {
+        color: #2a4d78;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+
+    header .hr {
+        display: block;
+        border-top: 4px solid #10417c;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    
+    header li {
+        display: inline-block;
+        line-height: 2.1;
+        font-size: 18px;
+    }
+
+   
+
+
+    article {
+        min-height: 70px;
+        margin: 10px 17px;                        
+        background-color: #b4c7cb;
+        padding: 0 15px;
+    }
+
+        article p {
+            text-align: justify;
+            line-height: 1.4;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+section {
+    min-height: 50px;
+    display: inline-block;
+    }
+    section h4 {
+        margin: 15px 0 3px 0;;
+        }
+        
+    .technologies {
+            vertical-align: top;
+            margin: 15px 20px;
+            text-align: center;
+            padding: 4px 18px 15px 17px;
+            border: 0.5px solid rgb(191, 234, 231);
+            box-sizing: border-box;
+        }
+
+    .projects {
+        background-color: rgb(212, 212, 212);
+        padding: 15px;
+        margin: 15px 0px 10px 10px;
+        line-height: 1.5;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background-color: rgb(140, 189, 190);
+        min-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+        footer li {
+            display: inline-block;
+            margin: 0 3px;
+        }
+    
+        footer img {
+            width: 30px;
+            vertical-align: bottom;
+        }
+
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    #wrapper {
+     padding: 20px;
+    }
+ 
+     h1 {
+     font-size: 2.5rem;
+   }
+     h2 {
+     font-size: 0.9rem;
+   }
+     header .profile-pic {
+     margin: 0;
+     display: block;
+   }
+     header .profile-pic img {
+     width: 190px;
+     height: 180x;
+     margin-top: 30px;
+     border-radius: 50%;
+   }
+ 
+   header .info li {
+     display: block;
+   }
+
+   header .info ul li:first-child::before {
+    content: '\2022';
+    margin-right: 5px;
+   }
+
+   article {
+    margin: 20px auto;
+    padding: 20px;
+   }
+   
+
+   section {
+    width: calc(100% - 30px);
+   }
+
+    section.technologies {
+        padding: 5px; 
+        /* background-color: red; */
+        margin-left: 10px;
+     }
+
+     section.projects {
+        /* background-color: red; */
+        padding-top: 5px;
+     }    
+     
+     section img {
+        width: 5rem;
+     }
+
+     footer {
+        padding-top: 5px;
+     }
+ }
+ 
+/* Tablet */
+ @media only screen and (min-width: 481px) {
+    
+    #wrapper {
+        padding: 25px;
+    }
+    
+    #wrapper h3 {
+        font-size: 2.2rem;
+    }
+
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+    }
+
+
+    header .info ul {
+        display: none;
+    }
+
+    header .info li {
+        font-size: 2rem;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    article p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        width: calc(50% - 30px);
+        /* margin: 10px auto; */
+    }
+    section.technologies {
+        padding: 20px;
+    }
+    section h3 {
+        padding: 15px;
+    }
+    section img {
+        width: 2.9rem;
+    }
+
+    section h4 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+ }
+
+ @media only screen and (min-width: 1024px) {
+    header .info ul {
+        display: inline-block;
+    }
+
+    article h3 {
+        font-size: 5rem;
+    }
+
+    section img {
+        width: 5rem;
+    }
+
+ }
